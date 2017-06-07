@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Success Motivation Gallery</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/interactions.css">
+</head>
+<body>
+  
+  <style>
+    
+  /* =================================
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font: 1em/1.5 'Open Sans', sans-serif;
+	color: #373737;
+	background: #eaeaea;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+h1,
+h2,
+h3 {
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 1.125em;
+	color: #4a89ca;
+	font-weight: 600;
+	margin: 0;
+}
+h3 {
+	font-size: 1.3em;
+	line-height: 1.25em;
+	margin-top: .85em;
+	margin-bottom: .5em;
+}
+p {
+	font-size: .875em;
+	line-height: 1.4;
+	margin: 0 0 1.5em;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Layout Containers ---- */
+
+.container {
+	width: 94.02985075%;
+	max-width: 1260px;
+	background: #fff;
+	margin: auto;
+}
+.main-header {
+	text-align: center;
+	padding: 2.8em 0;
+}
+.photo-container {
+	text-align: center;
+	margin-bottom: 4em;
+}
+.original-pos {
+/*	background-color: lightgrey;*/
+	height: 100%;
+	display: block;
+	line-height: 0;
+}
+/* ---- Page Elements ---- */
+
+.name {
+	font-size: 1.65em;
+	font-weight: 800;
+	margin: 0 0 1.5em;
+	line-height: 1;
+}
+.name span {
+	font-weight: 300;
+	margin-left: -7px;
+}
+.logo {
+	width: 45px;
+	margin-bottom: .4em;
+	cursor: pointer;
+}
+.photo {
+	position: relative;
+	line-height: 0;
+	margin-bottom: 2em;
+	overflow: hidden;
+}
+.photo-container img {
+ 	max-width: 100%;
+}
+.button {
+	color: #4a89ca;
+	width: 70%;
+	font-weight: 700;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px 0;
+	border: 2px solid #4a89ca;
+	border-radius: .5em;
+	margin: auto;
+}
+/* ---- Photo Overlay ---- */
+
+.photo-overlay {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	display: flex; /* For centering text inside .photo-overlay */
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0,0,0, .5);
+}
+.photo-overlay h3 {
+	margin-top: 0;
+}
+.slide .button {
+	color: #fff;
+	padding: 20px 0;
+	background: rgba(74,137,202, .8);
+	margin: 0;
+}
+.slide .photo-overlay {
+	opacity: 1;
+	background: #345d88;
+}
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 0) and (max-width: 768px) {
+	.container {
+		padding: 0 1.225em 2.5em;
+	}
+}
+@media (min-width: 769px) {
+	.container {
+		padding: 0 2.25em 3em;
+	}
+	.photo-container {
+		width: 48%;
+		float: left;
+		margin-left: 4%;
+	}
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+	.photo-container:nth-child(2n+1) {
+		margin-left: 0;
+		clear: left;
+	}
+}
+@media (min-width: 1025px) {
+	.photo-container {
+		width: 30.63973064%;
+	}
+	.photo-container:nth-child(3n+1) {
+		margin-left: 0;
+		clear: left;
+	}
+  }
+  </style>
+  
+	<div class="container">
+		<header class="main-header clearfix">
+			<img class="logo" src="img/camera.svg">
+			<h1 class="name">
+			Success Motivation <span>Gallery</span></h1>
+          </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html" class="selected">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+    </ul>
+    </nav>
+  
+    </header>
+
+		<div class="content clearfix">
+
+			<!-- scale / rotate -->
+
+			<div class="photo-container">
+			  <span class="original-pos">
+			  	<img src="img/photos/1.jpg" alt="The Wise Man">
+			  </span>
+		  	<h3>Success Motivation</h3>
+		  	<p>Success is walking from failure to failure with no loss of enthuasiasm (Winston Churchhill).</p>
+				<li><a href="http://downloads/gallerly.jpg">Download as JPGs</a></li>
+			</div>
+
+			<div class="photo-container">
+			  <span class="original-pos">
+			  	<img src="img/photos/2.jpg" alt="Success Motivation">
+			  </span>
+		  	<h3>Success Motivation</h3>
+		  	<p>''The moment I see a problem I immediately begin to think about opportunities that can be created by trying solving it'' (Strive Masiyiwa, Founder and Executive Chairman Econet Group).</p>
+				<a href="#" class="button">download</a>
+			</div>
+
+			<div class="photo-container">
+			  <span class="original-pos">
+			  	<img src="img/photos/3.jpg" alt="Success Motivation">
+			  </span>
+		  	<h3>Success Motivation</h3>
+		  	<p>whatever you need, you need courage. whatever course you decide upon, there is always someone to tell you you are wrong. There are always difficulties arising which temp you to believe that your critics are right. To map out a course of action and follow it to  an end, requires some of the courage which a soldier needs. Peace has its victories, but it takes brave men to win them. (Ralph Waldo Emerson).</p>
+				<a href="#" class="button">download</a>
+			</div>
+
+			<!-- scale / transform-origin -->
+
+			<div class="photo-container">
+				<div class="photo">
+				  <img src="img/photos/4.jpg" alt="Success Motivation">
+				  <div class="photo-overlay">
+				</div>
+				</div>
+				<a href="#" class="button">download</a>
+			</div>
+
+			<div class="photo-container">
+				<div class="photo">
+				  <img src="img/photos/5.jpg" alt="Success Motivation">
+				  <div class="photo-overlay">
+
+					</div>
+				</div>
+				<a href="#" class="button">download</a>
+			</div>
+
+			<div class="photo-container">
+				<div class="photo">
+				  <img src="img/photos/6.jpg" alt="Success Motivation">
+				  <div class="photo-overlay">
+
+					</div>
+				</div>
+				<a href="#" class="button">download</a>
+			</div>
+
+			<!-- translate -->
+
+			<div class="photo-container">
+				<div class="photo slide">
+				  <img src="img/photos/7.jpg" alt="">
+				  <div class="photo-overlay">
+					  <h3>Success Inspiration</h3>
+					  <P>If you can't fly then run,If you can't run then walk, If you can't walk then crawl</P>
+						<a href="#" class="button">download</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="photo-container">
+				<div class="photo slide">
+				  <img src="img/photos/8.png" alt="Success Motivation">
+				  <div class="photo-overlay">
+					  <h3>Success Motivation</h3>
+					  <p>Never do anything in business that wouldn't want published on the front page of your local newspaper. It takes 20 years to build a reputation and five minuets to destroy it. If you think about that, you might do things differently'' (Warren Buffet).</p>
+						<a href="#" class="button">download</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="photo-container">
+				<div class="photo slide">
+				  <img src="img/photos/9.png" alt="Success Motivation">
+				  <div class="photo-overlay">
+					  <h3>Success Motivation</h3>
+					  <p>''remember, that all who succeed in life get off to a bad start and pass through many heartbreaking struggles before they arrive. The turning point in the lives of those who succeed usually comes at the moment of some crisis through which they are introduced to their ''other selves'' (Napoleon Hill, Think and grow rich).</p>
+						<a href="#" class="button">download</a>
+                     <div>
+                    </div>
+                           
+				</div>
+			</div>
+          
+		</div>
+	</div>
+  <footer>
+        <a href="http://twitter.com/lukegw1"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+        <a href="http://facebook.com/lgwitirwa"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+        <a href="http://zw.linkedin.com/in/luke-gwitirwa-92515538"><img src="img/linkedin-wrap.png" alt="" class="social-icon"></a>
+        <p>&copy; 2017 Success Consultancy.</p>
+      </footer>
+</body>
+</html>

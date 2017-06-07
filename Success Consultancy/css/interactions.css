@@ -1,0 +1,43 @@
+/* ================================= 
+  Image Transforms & Transitions
+==================================== */
+
+/* -- Row 1 --------- */
+
+img {
+	transition: transform .5s;
+  transform-origin:50% 50%;
+}
+
+img:hover {
+	transform: scale(1.1);
+}
+
+/* -- Row 2 --------- */
+.photo img{
+  transition:.5s;
+}
+.photo:hover img {
+transform-origin: center;
+transform: scale(1.1);
+}
+/* -- Row 3 --------- */
+
+.slide photo-overlay,
+.slide img{
+  transition:transform 6s ease-out;
+}
+.slide .photo-overlay{
+transform: translatex(-100%);
+}
+.slide:hover .photo-overlay{
+  transform:translatex(0);
+}
+.slide:hover img{
+  transform:translatex(100%);
+}
+/* -- Logo ---------- */
+
+.logo:hover {
+	transform: translateX(50%);
+}
