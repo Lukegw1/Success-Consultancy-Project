@@ -1,0 +1,56 @@
+# Success-Consultancy-Project
+Web 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Success Consultancy|Website Design</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   </head>
+  <body>
+    <header>
+      <a href="index.html" id="logo">
+        <h1>Success Consultancy</h1>
+        <h2>Website Design</h2>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="selected">Contact</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+    <section id="primary">
+        <h3>Innovation,Technology and cutting Edge Solutions</h3>
+        <p>Business coaching, business consultancy to those who want to start businesses, motivational speaking, life success skills, success business workshops and seminars, each solution we provide is designed to inspire and challenges individuals, companies to reach their full potential. The curriculum is customized to specifically address organizational, cultural, and leadership challenges. It also offers numerous programs for individuals seeking to grow themselves personally.</p>
+        <p>Please don't hesitate to phone us for urgent inquiries. Or connect with us via Twitter,facebook,linkedIn or email.</p>
+       </section>
+      <section id="secondary">
+        <h3>Contact Details</h3>
+        <ul class="contact-info">
+          <li class="phone"><a href="Cell:+263-772-684020">+263-772-684020</a></li>
+          <li class="mail"><a href="mailto:lgwitirwa@gmail.com">lgwitirwa@gmail.com</a></li>
+          <li class="mail"><a href="mailto:eunicema@gmail.com">eunicema74@gmail.com</a></li>
+          <li class="twitter"><a href="http://twitter.com/intent/tweet?screen_name=Eunicema74R">twitter.com/@Eunicema74R</a></li>
+          <li class="twitter"><a href="http://twitter.com/intent/tweet?screen_name=lukegw1">twitter.com/@lukegw1</a></li>
+          <li class="about.me"><a href="http://about.me/lukegwitirwa">about.me/lukegwitirwa</a></li>
+        </ul>
+      </section>
+      <footer>
+      <p>follow us on:</p>
+        <a href="http://twitter.com/lukegw1"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+        <a href="http://facebook.com/lgwitirwa"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+        <a href="http://zw.linkedin.com/in/luke-gwitirwa-92515538"><img src="img/linkedin-wrap.png" alt="" class="social-icon"></a>
+        <p>&copy; 2017 Success Consultancy.</p>
+      </footer>
+    </div>
+  </body>
+</html>
